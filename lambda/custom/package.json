@@ -1,19 +1,26 @@
 {
-  "name": "skill-sample-nodejs-fact-i18n",
-  "version": "1.0.0",
-  "description": "I18n version of fact skill.",
+  "name": "choose-between-skill",
+  "version": "0.1.0",
+  "description": "Alexa skill to choose between two people",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "keywords": [
     "alexa",
     "skill",
-    "fact"
+    "choose",
+    "choice",
+    "random"
   ],
-  "author": "Amazon.com",
+  "author": "Jeff Rosenberg",
   "license": "Apache-2.0",
   "dependencies": {
     "alexa-sdk": "^1.0.12"
+  },
+  "devDependencies": {
+    "aws-lambda-mock-context": "^3.1.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
   }
 }
